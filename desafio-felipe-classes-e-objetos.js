@@ -1,0 +1,38 @@
+class heroi {
+    constructor(nome, idade, tipo, ataque){
+        this.nome = nome;
+        this.idade = idade;
+        this.tipo = tipo
+        this.ataque = ataque
+    }
+
+    atacar(){
+        if (this.tipo === "mago"){
+            this.ataque = "Magia"
+            return this.escrever()
+        }else if (this.tipo === "guerreiro"){
+            this.ataque = "Espada"
+            return this.escrever()
+        }else if (this.tipo === "monge"){
+            this.ataque = "Artes Marciais"
+            return this.escrever()
+        }else if (this.tipo === "ninja"){
+            this.ataque = "Shuriken"
+            return this.escrever()
+        }else{
+            console.log(`Não ha ataque para o tipo: ${this.tipo}`)
+        }
+
+    }
+
+    escrever(){
+        console.log(`O nome do heroi é ${this.nome} tem ${this.idade} anose é do tipo ${this.tipo} e atacou usando ${this.ataque}`)
+    }
+    
+}
+
+let heroi1 = new heroi("Bruno", 36, "monge")
+
+heroi1.atacar()
+
+
