@@ -26,13 +26,12 @@ class heroi {
     }
 
     escrever(){
-        console.log(`O nome do heroi é ${this.nome} tem ${this.idade} anose é do tipo ${this.tipo} e atacou usando ${this.ataque}`)
+        console.log(`O nome do heroi é ${this.nome} tem ${this.idade} anos e é do tipo ${this.tipo} e atacou usando ${this.ataque}.`)
     }
     
 }
 
-let heroi1 = new heroi("Bruno", 36, "monge")
+let novoHeroi = new heroi("Novo Heroi", 20, "monge")
 
-heroi1.atacar()
-
+novoHeroi.atacar()
 
